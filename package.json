@@ -5,7 +5,8 @@
 	"private": true,
 	"scripts": {
 		"start": "bun run ./server/main.ts",
-		"dev": "bun run --watch ./server/main.ts"
+		"dev": "bun run --watch ./server/main.ts",
+		"migration:status": "bun server/db/database.ts status"
 	},
 	"imports": {
 		"#infra/*": "./server/infra/*"
