@@ -6,6 +6,9 @@
 	"scripts": {
 		"start": "bun run ./server/main.ts",
 		"dev": "bun run --watch ./server/main.ts",
+		"migration:up": "bun run server/db/database.ts up",
+		"migration:down": "bun server/db/database.ts down",
+		"migration:destroy": "bun server/db/database.ts destroy",
 		"migration:status": "bun server/db/database.ts status"
 	},
 	"imports": {
