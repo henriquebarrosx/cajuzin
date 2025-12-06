@@ -12,7 +12,8 @@
 		"migration:status": "bun server/db/database.ts status"
 	},
 	"imports": {
-		"#infra/*": "./server/infra/*"
+		"#infra/*": "./server/infra/*",
+		"#exception/*": "./server/app/exception/*"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
