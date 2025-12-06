@@ -3,7 +3,7 @@ import { threadId } from "worker_threads";
 
 export const logger = createLogger();
 
-type Logger = {
+export type Logger = {
 	info(message: string, ...args: unknown[]): void;
 	error(message: string | unknown, ...args: unknown[]): void;
 }
